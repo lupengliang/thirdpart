@@ -3,18 +3,18 @@
 
 from logger.logging_setting import logger
 
-# 文件操作类
+# class of handling file
 class FileClass():
     def __init__(self):
         pass
 
-    # 向文件中写入数据
+    # write data to file
     def write_data(self,filepath, content):
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
             logger.info(f'successful to write message to {filepath.split("/")[-1]} file.')
 
-    # 从文件中读取数据
+    # read data to file
     def read_data(self, filepath):
         with open(filepath, encoding='utf-8') as f:
             content = f.read()

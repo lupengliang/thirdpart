@@ -5,34 +5,34 @@ import os
 from logger.logging_setting import logger
 import shutil
 
-
+# class of move | rename | copy | delete
 class OSClass():
     def __init__(self):
         pass
 
-    # 获取当前路径下的所有文件
+    # get all file names of current path
     def get_all_file(self):
         current_path = os.path.dirname(os.path.abspath(__file__))
         all_file = os.listdir(current_path)
         logger.info(f'successful to get all the file as this {all_file}.')
         return all_file
 
-    # 拼接文件名与路径
+    # join point filepath and filename
     def concat_path(self, filepath, filename):
         absulte_path = os.path.join(filepath, filename)
         return absulte_path
 
-    # 移动当前文件到指定目录
+    # move file of current path to point path
     def move_file(self, filepath, target_path):
         shutil.move(filepath, target_path)
         logger.info(f'successful to move file {filepath.split("/")[-1]} to {target_path}.')
 
-    # 删除指定目录下的文件
+    # delete file of point path
     def delete_file(self, filepath):
         os.remove(filepath)
         logger.info(f'successful to delete {filepath.split("/")[-1]} file.')
 
-    # 对指定目录下的文件进行重命名
+    # rename file of point path
     def rename_file(self, filename, filepath, targetpath):
         if filename not in targetpath:
             os.rename(filepath, targetpath)
