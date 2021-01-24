@@ -1,0 +1,33 @@
+[2021-01-10 00:17:12,519] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172
+[2021-01-10 00:17:12,523] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:17:43,649] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172
+[2021-01-10 00:17:43,653] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:17:43,653] [excel_operation.py][line:36] - [INFO]: current all sheet names are [].
+[2021-01-10 00:22:36,629] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172
+[2021-01-10 00:22:36,633] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:23:27,185] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172
+[2021-01-10 00:23:27,190] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:23:45,630] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172
+[2021-01-10 00:23:45,635] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:23:45,635] [excel_operation.py][line:18] - [INFO]: current all sheet names are [].
+[2021-01-10 00:23:45,698] [excel_operation.py][line:20] - [INFO]: successful to save course.xlsx.
+[2021-01-10 00:25:52,878] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172.
+[2021-01-10 00:25:52,884] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:25:52,885] [excel_operation.py][line:18] - [INFO]: current all sheet names are [].
+[2021-01-10 00:25:52,901] [excel_operation.py][line:20] - [INFO]: successful to save course.xlsx.
+[2021-01-10 00:25:53,000] [excel_operation.py][line:25] - [INFO]: successful to load excel named course.xlsx.
+[2021-01-10 00:25:56,461] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172.
+[2021-01-10 00:25:56,466] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:25:56,466] [excel_operation.py][line:18] - [INFO]: current all sheet names are [].
+[2021-01-10 00:25:56,476] [excel_operation.py][line:20] - [INFO]: successful to save course.xlsx.
+[2021-01-10 00:25:56,482] [excel_operation.py][line:25] - [INFO]: successful to load excel named course.xlsx.
+[2021-01-10 00:26:01,026] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172.
+[2021-01-10 00:26:01,030] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:26:01,030] [excel_operation.py][line:18] - [INFO]: current all sheet names are [].
+[2021-01-10 00:26:01,039] [excel_operation.py][line:20] - [INFO]: successful to save course.xlsx.
+[2021-01-10 00:26:01,044] [excel_operation.py][line:25] - [INFO]: successful to load excel named course.xlsx.
+[2021-01-10 00:26:16,597] [course_function.py][line:21] - [INFO]: successful to get information on length is 137172.
+[2021-01-10 00:26:16,602] [excel_operation.py][line:16] - [INFO]: successful to create excel named course.xlsx.
+[2021-01-10 00:26:16,602] [excel_operation.py][line:18] - [INFO]: current all sheet names are [].
+[2021-01-10 00:26:16,610] [excel_operation.py][line:20] - [INFO]: successful to save course.xlsx.
+[2021-01-10 00:26:16,616] [excel_operation.py][line:25] - [INFO]: successful to load excel named course.xlsx.
