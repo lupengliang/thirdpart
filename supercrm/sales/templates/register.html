@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.jq22.com/demo/jquery-Sharelink20151012/register.html -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册丨Sharelink</title>
+    <link rel="stylesheet" href="{% static 'plugins/login/style.css' %}">
+</head>
+<body rlt="1" style="">
+
+<div class="register-container">
+    <h1>SuperCRM 注册页面</h1>
+
+    <div class="connect">
+        <p>新用户, 欢迎来到注册页面.</p>
+    </div>
+
+    <form action="" method="post" id="registerForm" novalidate="novalidate">
+        {% for field in register_form_obj %}
+            {% csrf_token %}
+            <div>
+                {{ field }}
+                <span style="color: red;font-size: 12px">{{ field.errors.0 }}</span>
+            </div>
+        {% endfor %}
+
+{#        <div>#}
+{#            <label for="{{ register_form_obj.username.id_for_label }}">{{ register_form_obj.username.label }}</label>#}
+{#            {{ register_form_obj.username }}#}
+{#        </div>#}
+{#        <div>#}
+{#            <input type="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false"#}
+{#                   onpaste="return false">#}
+{#        </div>#}
+{#        <div>#}
+{#            <input type="password" name="confirm_password" class="confirm_password" placeholder="再次输入密码"#}
+{#                   oncontextmenu="return false" onpaste="return false">#}
+{#        </div>#}
+{#        <div>#}
+{#            <input type="text" name="phone_number" class="phone_number" placeholder="输入手机号码" autocomplete="off"#}
+{#                   id="number">#}
+{#        </div>#}
+{#        <div>#}
+{#            <input type="email" name="email" class="email" placeholder="输入邮箱地址" oncontextmenu="return false"#}
+{#                   onpaste="return false">#}
+{#        </div>#}
+
+        <button id="submit" type="submit">注 册</button>
+    </form>
+    <a href="{% url 'login' %}">
+        <button type="button" class="register-tis">已经有账号？</button>
+    </a>
+
+</div>
+
+
+<script src="{% static 'plugins/login/hm.js' %}"></script>
+<script src="{% static 'plugins/login/jquery.min.js' %}"></script>
+<script src="{% static 'plugins/login/jquery.min.js(1)' %}"></script>
+<script src="{% static 'plugins/login/common.js' %}"></script>
+<!--背景图片自动更换-->
+<script src="{% static 'plugins/login/supersized.3.2.7.min.js' %}"></script>
+<script src="{% static 'plugins/login/supersized-init.js' %}"></script>
+<!--表单验证-->
+<script src="{% static 'plugins/login/jquery.validate.min.js' %}"></script>
+<div id="mmq" style="display:none;"></div>
+</body>
+</html>
