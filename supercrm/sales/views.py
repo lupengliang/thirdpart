@@ -13,7 +13,7 @@ from sales.utils.hashlib_func import set_md5
 # Create your views here.
 
 
-# 登录视图
+# 登录
 def login(request):
     if request.method == 'GET':
         return render(request, 'login.html')
@@ -22,10 +22,11 @@ def login(request):
         password = request.POST.get('password')
         user_obj = models.UserInfo.objects.filter(username=username, password=set_md5(password)).first()
         if user_obj:
-            return HttpResponse('ok')
+            return redirect('customers')
         else:
             # return redirect('login')
             return render(request, 'login.html', {'error': '用户名或者密码错误'})
+
 
 def mobile_validate(value):
     mobile_re = re.compile(r'^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$')
@@ -104,6 +105,7 @@ def register(request):
     :param request:
     :return:
     """
+    # 基于form的数据校验
     if request.method == 'GET':
         register_form_obj = RegisterForm()
         return render(request, 'register.html', {'register_form_obj': register_form_obj})
@@ -113,6 +115,8 @@ def register(request):
             print(register_form_obj.cleaned_data)
             register_form_obj.cleaned_data.pop('r_password')
             password = register_form_obj.cleaned_data.pop('password')
+
+            # 对密码进行加密
             password = set_md5(password)
             register_form_obj.cleaned_data.update({'password': password})
             models.UserInfo.objects.create(
@@ -121,3 +125,22 @@ def register(request):
             return redirect('login')
         else:
             return render(request, 'register.html', {'register_form_obj': register_form_obj})
+
+
+def home(request):
+    return render(request, 'saleshtml/home.html')
+
+
+def customers(request):
+    # 当前页 例如 1
+    page_num = request.GET.get('page')
+
+    per_page_num = 10    # 每页显示10条
+    '''
+        1       0               10
+        2       10              20
+        3       20              30
+        ..      (page-1)*10     page*10
+    '''
+    customer_objs = models.Customer.objects.all()[(int(page_num)-1)*per_page_num: int(page_num)*per_page_num]
+    return render(request, 'saleshtml/customers.html', {'customer_objs': customer_objs})

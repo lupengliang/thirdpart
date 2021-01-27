@@ -21,4 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', views.login, name='login'),    # 登录
     url(r'^register/', views.register, name='register'),    # 注册
+    url(r'^home/', views.home, name='home'),    # 首页
+    # 所有客户信息展示
+    url(r'^customers', views.customers, name='customers')
 ]
