@@ -23,5 +23,13 @@ urlpatterns = [
     url(r'^register/', views.register, name='register'),    # 注册
     url(r'^home/', views.home, name='home'),    # 首页
     # 所有客户信息展示
-    url(r'^customers', views.customers, name='customers')
+    url(r'^customers', views.CutomerView.as_view(), name='customers'),
+    # 我的客户
+    url(r'^mycustomers', views.CutomerView.as_view(), name='mycustomers'),
+    # 添加页面
+    # url(r'^add_customer', views.add_customer, name='add_customer'),
+    url(r'^add_customer', views.add_edit_customer, name='add_customer'),
+    # 编辑客户
+    # url(r'^edit_customer/(\d+)/', views.edit_customer, name='edit_customer'),
+    url(r'^edit_customer/(\d+)/', views.add_edit_customer, name='edit_customer'),
 ]

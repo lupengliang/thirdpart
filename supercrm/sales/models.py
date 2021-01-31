@@ -1,6 +1,7 @@
 from django.db import models
 
 from multiselectfield import MultiSelectField
+from django.utils.safestring import mark_safe
 
 # Create your models here.
 
@@ -146,9 +147,10 @@ class Customer(models.Model):
     True, on_delete=models.CASCADE)
 
     # 一个客户可以报多个班,报个脱产班,再报个周末班,所以是多对多
-    class_list = models.ManyToManyField('ClassList', verbose_name="已报班级")
+    class_list = models.ManyToManyField('ClassList', verbose_name="已报班级", blank=True)
 
     class Meta:
+        ordering = ['id',]
         verbose_name = '客户信息表'
         verbose_name_plural = '客户信息表'
 
@@ -156,6 +158,16 @@ class Customer(models.Model):
     # 必然相加会报错,null类型和str类型不能相加等错误信息
     def __str__(self):
         return self.name + ":" + self.qq
+
+    def status_show(self):
+        status_color = {
+            'paid_in_full': 'green',
+            'unregistered': 'red',
+            'studying': 'lightblue',
+            'signed': 'yellow',
+        }
+        return mark_safe("<span style='background-color:{0}'>{1}</span>"
+                         .format(status_color[self.status],self.get_status_display()))
 
 
 ####################下面的表以后再说#####################

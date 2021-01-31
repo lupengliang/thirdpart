@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'sales.utils.mymiddleware.UserAuth',
 ]
 
 ROOT_URLCONF = 'supercrm.urls'
@@ -133,3 +134,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'statics'),
 ]
+
+PER_PAGE_NUM = 10  # 每页显示多少条
+PAGE_NUM_SHOW = 5  # 显示的页码数

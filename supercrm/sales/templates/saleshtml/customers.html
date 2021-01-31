@@ -1,49 +1,87 @@
 {% extends 'starter.html' %}
 
+{% block title %}
+<h1>
+{#    {% if tag == '1' %}#}
+{#    公户信息#}
+{#    {% else %}#}
+{#    我的客户信息#}
+{#    {% endif %}#}
+    {% load mytags %}
+    {% reverse_url request %}
+</h1>
+{% endblock %}
 {% block content %}
-<table class="table table-striped tabled-hover table-bordered">
-<thead>
-<tr>
-    <th>序号</th>
-    <th>id</th>
-    <th>qq</th>
-    <th>姓名</th>
-    <th>sex</th>
-    <th>转介绍自学员</th>
-</tr>
-</thead>
-<tbody>
-{% for customer_obj in customer_objs %}
-<tr>
-    <td>{{ forloop.counter }}</td>
-    <td>{{ customer_obj.pk }}</td>
-    <td>{{ customer_obj.qq }}</td>
-    <td>{{ customer_obj.name}}</td>
-    <td>{{ customer_obj.get_sex_display }}</td>
-    <td>{{ customer_obj.introduce_from }}</td>
-</tr>
-{% endfor %}
-</tbody>
+    <a href="{% url 'add_customer' %}" class="btn btn-primary">
+        添加客户
+    </a>
+    <div class="form-inline">
+        <form action="" class="pull-right">
+            <div class="form-group">
+                <select name="search_field" id="search_field" class="form-control">
+                    <option value="qq__contains">qq</option>
+                    <option value="name__contains">name</option>
+                    <!-- search_field:name kw:1111 filter(name=1111) -->
+                    <input type="text" class="form-control" id="key_word" placeholder="请输入搜索内容" name="kw">
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </select>
+            </div>
+        </form>
+    </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group pull-left">
+            <select name="action" id="action" class="form-control">
+                {% if tag == '1' %}
+                    <option value="reverse_gs">公户转私户</option>
+                {% else %}
+                    <option value="reverse_sg">私户转公户</option>
+                {% endif %}
 
-44.16
-</table>
-<nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="/customers/?page=1">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+            </select>
+        </div>
+        <button class="btn btn-warning">go</button>
+        <table class="table table-striped tabled-hover table-bordered">
+            <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" id="select_all">选择
+                </th>
+                <th>序号</th>
+                <th>id</th>
+                <th>qq</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>报名状态</th>
+                <th>转介绍自学员</th>
+                <th>销售</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for customer_obj in customer_objs %}
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cids" value="{{ customer_obj.pk }}">
+                    </td>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ customer_obj.pk }}</td>
+                    <td>{{ customer_obj.qq }}</td>
+                    <td>{{ customer_obj.name }}</td>
+                    <td>{{ customer_obj.get_sex_display }}</td>
+                    <td>{{ customer_obj.status_show }}</td>
+                    <td>{{ customer_obj.introduce_from|default:'无' }}</td>
+                    <td>{{ customer_obj.consultant|default:'暂无' }}</td>
+                    <td>
+                        <a href="{% url 'edit_customer' customer_obj.pk %}"><i class="fa fa-edit">编辑</i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {{ page_html }}
+    </form>
+
+
+
 {% endblock content %}
