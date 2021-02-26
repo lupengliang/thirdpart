@@ -1,7 +1,10 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
 # Author:lupengliang
+import platform
+
 from base.base import Base
+from base.data import (data, drive)
 
 
 class Logic(Base):
@@ -40,9 +43,23 @@ class Logic(Base):
     def shield_face(self):
         pass
 
-    # 启动游戏
+    # 提示是否开启
     def start_game(self):
-        pass
+        system = platform.system()
+        if system == 'windows':
+            self.pu.alert(text="支持windows运行", title="提示", button="确定", timeout=800)
+        else:
+            self.pu.alert(text="程序只支持windows", title="提示", button="确定")
+        confirm = self.pu.confirm(text="是否启动炉石传说死鱼骑脚本？", title="提示", buttons=["确定", "取消"])
+
+    # 启动游戏
+    def prepare_start(self):
+        self.key_board('win', 'r')
+        self.key_board('ctrl', 'space')
+        self.type('cmd \n')
+        self.key_board('ctrl', 'space')
+        self.type(f'{drive} \n')
+        self.type(f'{data.get("path").get("game_path")} \n')
 
 
 if __name__ == '__main__':

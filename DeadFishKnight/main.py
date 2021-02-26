@@ -9,9 +9,11 @@ class Main(Logic):
         super().__init__()
 
     # 启动游戏
-    def start_game(self):
-        pass
+    def run(self):
+        self.start_game()
+        self.prepare_start()
 
 
 if __name__ == '__main__':
-    pass
+    main = Main()
+    main.run()
