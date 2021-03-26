@@ -12,6 +12,7 @@ import asyncio
 import time
 
 import aiohttp
+from lxml import etree
 
 s = time.time()
 urls = [
@@ -21,18 +22,27 @@ urls = [
 
 
 # aiohttp处理多任务的固定写法
+# 细节:在每一个with前加上async,在每一个阻塞操作的前边加上await
 async def get_request(url):
     async with aiohttp.ClientSession() as s:
         async with await s.get(url=url) as response:
-            page_text = await response.text()
+            page_text = await response.text()  # read()返回的是byte类型的数据
     return page_text
 
+
+# 回调函数
+def parse(task):
+    page_text = task.result
+    tree = etree.HTML(page_text)
+    parse_data = tree.xpath('//li/text()')
+    print(parse_data)
 
 tasks = []
 for url in urls:
     c = get_request(url)
     task = asyncio.ensure_future(c)
     tasks.append(task)
+
 
 loop = asyncio.get_event_loop()  # 创建事件循环对象
 # 注意:挂起操作需要手动执行
