@@ -3,8 +3,25 @@ password:
 
 
 path:
+  # 启动游戏
   game_path: E:\moshou\battlenet\Battle.net\Battle.net.exe
+  win_path: D:\TOOLS\DeadFishKnight\config\pictures\win_logs\cmd_result.png
+  start_game: D:\TOOLS\DeadFishKnight\config\pictures\login\start_game.png
+
+  # 游戏模式
+  adventure_model: D:\TOOLS\DeadFishKnight\config\pictures\model\冒险模式.png
+  practice_model: D:\TOOLS\DeadFishKnight\config\pictures\model\练习模式.png
+
+  # 难度选择
+  normal_model: D:\TOOLS\DeadFishKnight\config\pictures\model\普通难度.png
 
 
 settings:
-  PAUSE: 2.5
+  # 游戏配置
+  PAUSE: 2
+
+
+position:
+  common:
+    x: 974  # 开始按钮
+    y: 848

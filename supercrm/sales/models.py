@@ -95,8 +95,8 @@ class ClassList(models.Model):
     class Meta:
         unique_together = ("course", "semester", "campuses")
 
-        # def __str__(self):
-        # return "{} {} ({})".format(self.get_course_display(), self.semester, self.campuses)
+    def __str__(self):
+        return "{} {} ({})".format(self.get_course_display(), self.semester, self.campuses)
 
 
 # 客户表
@@ -188,3 +188,94 @@ class Campuses(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ConsultRecord(models.Model):
+    """
+    跟进记录表
+    """
+    customer = models.ForeignKey('Customer', verbose_name="所咨询客户")
+    note = models.TextField(verbose_name="跟进内容...")
+    status = models.CharField("跟进状态", max_length=8, choices=seek_status_choices, help_text="选择客户此时的状态")
+    # consultant = models.ForeignKey("UserInfo", verbose_name="跟进人",
+    # related_name='records', limit_choices_to={'pk': 3})
+    # limit_choices_to可以限制任何内容,现在就是让跟进人只显示当前登录人,比如如果当前登录人的pk为3的话,就可以这么写
+    consultant = models.ForeignKey("UserInfo", verbose_name="跟进人", related_name='records')
+    # 应该将limit_choices_to写成动态的,但是在models字段中没法写,因为没法把request动态放到这里
+    date = models.DateTimeField("跟进日期", auto_now_add=True)
+
+    delete_status = models.BooleanField(verbose_name="删除状态", default=False)
+    # 表面上删除了这个数据,其实数据库里面还有
+
+    def __str__(self):
+        return str(self.customer) + str(self.consultant)
+
+
+class Enrollment(models.Model):
+    """
+    报名表
+    """
+    why_us = models.TextField("为什么报名", max_length=1024, default=None, blank=True, null=True)
+    your_expectation = models.TextField("学完想达到的具体期望", max_length=1024, blank=True, null=True)
+    contract_agreed = models.BooleanField("我已认真阅读完培训协议并同意全部协议内容", default=True)
+    # 这个没用, 和合同相关的
+    contract_approved = models.BooleanField("审批通过", help_text="在审阅完学员的资料无误后勾选此项,合同即生效",
+    default=False) # 这个没用,和合同相关的
+    enrolled_date = models.DateTimeField(auto_now_add=True, verbose_name="报名日期")
+    memo = models.TextField('备注', blank=True, null=True)
+    delete_status = models.BooleanField(verbose_name="删除状态", default=False)
+    customer = models.ForeignKey('Customer', verbose_name='客户名称')
+    school = models.ForeignKey('Campuses')
+    # 其实校区写不写都可以,因为你只要知道了所报班级,就能知道自己所在校区了,但是为了更方便的查询,咱们设置一下
+    enrollment_class = models.ForeignKey("ClassList", verbose_name="所报班级")
+
+    class Meta:
+        # 班级和客户一定要联合唯一,因为不能让人家学生在这个班级里面出现两次啊
+        unique_together = ('enrolment_class', 'customer')
+
+    def __str__(self):
+        return self.customer.name
+
+
+# 课程记录表
+class CourseRecord(models.Model):
+    """
+    课程记录表
+    """
+    day_num = models.IntegerField("节次", help_text="此处写第几课或第几天的课程...必须为数字")
+    date = models.DateField(auto_now_add=True, verbose_name="上课日期")
+    course_title = models.CharField('本节课程标题', max_length=64, blank=True, null=True)
+    course_memo = models.TextField('本节课程内容', max_length=300, blank=True, null=True)
+    has_homework = models.BooleanField(default=True, verbose_name="本节有作业")
+    homework_title = models.CharField('本节作业标题', max_length=64, blank=True, null=True)
+    homework_memo = models.TextField('作业描述', max_length=500, blank=True, null=True)
+    scoring_point = models.TextField('得分点', max_length=300, blank=True, null=True)
+    re_class = models.ForeignKey('ClassList', verbose_name="班级")
+    teacher = models.ForeignKey('UserInfo', verbose_name="讲师")
+
+    class Meta:
+        unique_together = ('re_class', 'day_num')
+
+    def __str__(self):
+        return str(self.day_num)
+
+
+# 学习记录表
+class StudyRecord(models.Model):
+    """
+    学习记录
+    """
+    attendance = models.CharField("考勤", choices=attendance_choices, default="checked", max_length=64)
+    score = models.IntegerField("本节成绩", choices=score_choices, default=1)
+    homework_note = models.CharField(max_length=255, verbose_name='作业批语', blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+    note = models.CharField("备注", max_length=255, blank=True, null=True)
+    homework = models.FileField(verbose_name='作业文件', blank=True, null=True, default=None)
+    course_record = models.ForeignKey('CourseRecord', verbose_name="某节课程")
+    student = models.ForeignKey('Customer', verbose_name="学员")
+
+    class Meta:
+        unique_together = ('course_record', 'student')
+
+    def __str__(self):
+        return self.student.name + ':' + str(self.course_record.day_num)

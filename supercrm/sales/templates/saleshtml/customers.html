@@ -54,6 +54,7 @@
                 <th>性别</th>
                 <th>报名状态</th>
                 <th>转介绍自学员</th>
+                <th>跟进记录</th>
                 <th>销售</th>
                 <th>操作</th>
             </tr>
@@ -71,9 +72,13 @@
                     <td>{{ customer_obj.get_sex_display }}</td>
                     <td>{{ customer_obj.status_show }}</td>
                     <td>{{ customer_obj.introduce_from|default:'无' }}</td>
+                    <td>
+                        <a href="{% url 'consult_record' %}?cid={{ customer_obj.pk }}">查看详情</a>
+                    </td>
                     <td>{{ customer_obj.consultant|default:'暂无' }}</td>
                     <td>
-                        <a href="{% url 'edit_customer' customer_obj.pk %}"><i class="fa fa-edit">编辑</i></a>
+{#                        <a href="{% url 'edit_customer' customer_obj.pk %}"><i class="fa fa-edit">编辑</i></a>#}
+                        <a href="{% resole_url request 'edit_customer' customer_obj.pk %}"><i class="fa fa-edit"></i>xxx</a>
                     </td>
                 </tr>
             {% endfor %}
