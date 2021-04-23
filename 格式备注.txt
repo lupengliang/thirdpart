@@ -1,13 +1,13 @@
-2021/4/23 23:17:05 by lupengliang
+﻿2021/4/23 23:17:05 by lupengliang
 
 命名规范
 
 >>> 1.三方库命名
-	-- M<module> 开头
+	-- M<module> 开头 [三方库名称小写]
 		eg: Mopenpyxl
 
 >>> 2.框架命名
-	-- F<frame>  开头
+	-- F<frame>  开头 [框架名称大写]
 		eg: FDjango
 		
 >>> 3.复杂进阶内容命名
