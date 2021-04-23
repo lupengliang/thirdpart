@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/多任务处理.iml" filepath="$PROJECT_DIR$/.idea/多任务处理.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/多任务.iml" filepath="$PROJECT_DIR$/.idea/多任务.iml" />
     </modules>
   </component>
 </project>
