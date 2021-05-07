@@ -24,6 +24,15 @@
     -decodeData(data):是将加密的响应数据进行解密的
 10.需要通过python调用js的相关代码
     -PyExecJS:可以让python对js代码进行模拟运行.
-    pip install PyExecJS
+    -pip install PyExecJS
+    -安装nodejs环境的安装,不然PyExecJS无法使用
 """
-51.40
+
+
+"""
+总结:
+    -动态变化的请求参数
+    -js加密
+    -js混淆
+"""
+
