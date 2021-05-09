@@ -1,4 +1,4 @@
-# Scrapy settings for firstBlood project
+# Scrapy settings for huyaPro project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,19 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'firstBlood'
+BOT_NAME = 'huyaPro'
 
-SPIDER_MODULES = ['firstBlood.spiders']
-NEWSPIDER_MODULE = 'firstBlood.spiders'
+SPIDER_MODULES = ['huyaPro.spiders']
+NEWSPIDER_MODULE = 'huyaPro.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
 
+# LOG_LEVEL = 'ERROR'
+
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False  # ROBOT协议
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +47,13 @@ ROBOTSTXT_OBEY = False  # ROBOT协议
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'firstBlood.middlewares.FirstbloodSpiderMiddleware': 543,
+#    'huyaPro.middlewares.HuyaproSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'firstBlood.middlewares.FirstbloodDownloaderMiddleware': 543,
+#    'huyaPro.middlewares.HuyaproDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -62,9 +64,9 @@ ROBOTSTXT_OBEY = False  # ROBOT协议
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'firstBlood.pipelines.FirstbloodPipeline': 300,  # 300表示的优先级,值越小,优先级越高
-}
+#ITEM_PIPELINES = {
+#    'huyaPro.pipelines.HuyaproPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

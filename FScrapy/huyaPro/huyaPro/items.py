@@ -6,6 +6,9 @@
 import scrapy
 
 
-class FirstbloodItem(scrapy.Item):
+class HuyaproItem(scrapy.Item):
     # define the fields for your item here like:
-    content = scrapy.Field()  # Field是一个万能的数据类型
+    # name = scrapy.Field()
+    title = scrapy.Field()
+    author = scrapy.Field()
+    hot = scrapy.Field()
