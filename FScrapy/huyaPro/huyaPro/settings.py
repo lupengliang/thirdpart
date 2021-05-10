@@ -8,6 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'huyaPro'
+LOG_LEVEL = 'ERROR'
 
 SPIDER_MODULES = ['huyaPro.spiders']
 NEWSPIDER_MODULE = 'huyaPro.spiders'
@@ -64,9 +65,11 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'huyaPro.pipelines.HuyaproPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'huyaPro.pipelines.HuyaproPipeline': 300,
+   'huyaPro.pipelines.mysqlPipeLine': 301,
+   'huyaPro.pipelines.RedisPipeLine': 302,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
