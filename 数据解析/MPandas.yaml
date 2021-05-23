@@ -1,0 +1,17 @@
+Pandas的数据结构:
+  重要
+
+一维:
+  Series
+
+多维:
+  DataFrame
+  总结:
+    索引:
+      df[列索引]: 取一列
+      df[[col1,col2]]: 取两列
+      df.loc[显示的行索引]: 取行
+      df.loc[行，列]: 取元素
+    切片:
+      df[index1:index3]: 切行
+      df.loc[col1:col3]: 切列
