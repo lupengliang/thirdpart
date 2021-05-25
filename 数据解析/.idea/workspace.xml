@@ -28,6 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="851" />
+    <option name="y" value="27" />
+    <option name="width" value="1026" />
+    <option name="height" value="965" />
+  </component>
   <component name="ProjectId" id="1pPOVEJmL8y1Xn6ysOawFhpylMq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,17 +44,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRM01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\TOOLS\数据解析" />
-      <recent name="D:\TOOLS\数据解析模块练习\多任务线程" />
+      <recent name="D:\TOOLS\数据解析\Mxpath" />
+      <recent name="D:\TOOLS\数据解析\Mbeautifulsoup" />
+      <recent name="D:\TOOLS\数据解析\Mnumpy" />
+      <recent name="D:\TOOLS\数据解析\JS混淆分析" />
+      <recent name="D:\TOOLS\数据解析\Mpandas" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Mpandas">
-    <configuration name="单线程" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.级联">
+    <configuration name="级联" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="数据解析" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,12 +65,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mpandas" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\TOOLS\数据解析模块练习\多任务线程\单线程.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mpandas/级联.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Mnumpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1.单个骰子直方图" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="数据解析" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,12 +87,90 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mpygal" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mnumpy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mpygal/1.单个骰子直方图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2.绘制散点图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="数据解析" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mmatplotlib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mmatplotlib/2.绘制散点图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2.随机漫步" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mmatplotlib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="数据解析" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mmatplotlib/2.随机漫步.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="2.两个同数骰子直方图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mpygal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="数据解析" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mpygal/2.两个同数骰子直方图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="3.两个异数骰子直方图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="数据解析" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mpygal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mpygal/3.两个异数骰子直方图.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,95 +192,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mpandas.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="空气质量分数爬取" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="数据解析" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫/空气质量分数爬取.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="多线程" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="数据解析模块练习" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/多任务线程" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/多任务线程/多线程.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="单线程+多任务异步协程" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="数据解析" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/多任务线程" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/多任务线程/单线程+多任务异步协程.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="数据解析" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/selenium框架" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium框架/base.py" />
+      <option name="SCRIPT_NAME" value="D:\TOOLS\数据解析\Mpandas\Mpandas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,19 +202,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.单线程+多任务异步协程" />
-      <item itemvalue="Python.单线程" />
-      <item itemvalue="Python.base" />
-      <item itemvalue="Python.Mnumpy" />
+      <item itemvalue="Python.2.绘制散点图" />
+      <item itemvalue="Python.1.单个骰子直方图" />
+      <item itemvalue="Python.3.两个异数骰子直方图" />
       <item itemvalue="Python.Mpandas" />
+      <item itemvalue="Python.级联" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.级联" />
         <item itemvalue="Python.Mpandas" />
-        <item itemvalue="Python.Mnumpy" />
-        <item itemvalue="Python.base" />
-        <item itemvalue="Python.单线程+多任务异步协程" />
-        <item itemvalue="Python.单线程" />
+        <item itemvalue="Python.3.两个异数骰子直方图" />
+        <item itemvalue="Python.1.单个骰子直方图" />
+        <item itemvalue="Python.2.绘制散点图" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +236,10 @@
       <workItem from="1620398793895" duration="2334000" />
       <workItem from="1621702393586" duration="202000" />
       <workItem from="1621732534530" duration="4889000" />
-      <workItem from="1621775508502" duration="5959000" />
+      <workItem from="1621775508502" duration="5960000" />
+      <workItem from="1621861316830" duration="1124000" />
+      <workItem from="1621947281208" duration="1148000" />
+      <workItem from="1621952354844" duration="3083000" />
     </task>
     <servers />
   </component>
@@ -249,38 +251,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619192028130" />
-    <state width="742" height="191" key="GridCell.Tab.0.bottom" timestamp="1621779826641">
+    <state width="742" height="183" key="GridCell.Tab.0.bottom" timestamp="1621948825248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621779826641" />
-    <state width="742" height="191" key="GridCell.Tab.0.center" timestamp="1621779826640">
+    <state width="742" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621948825248" />
+    <state width="742" height="183" key="GridCell.Tab.0.center" timestamp="1621948825248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621779826640" />
-    <state width="742" height="191" key="GridCell.Tab.0.left" timestamp="1621779826640">
+    <state width="742" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621948825248" />
+    <state width="742" height="183" key="GridCell.Tab.0.left" timestamp="1621948825248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621779826640" />
-    <state width="742" height="191" key="GridCell.Tab.0.right" timestamp="1621779826641">
+    <state width="742" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621948825248" />
+    <state width="742" height="183" key="GridCell.Tab.0.right" timestamp="1621948825248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621779826641" />
-    <state width="742" height="237" key="GridCell.Tab.1.bottom" timestamp="1621776342188">
+    <state width="742" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621948825248" />
+    <state width="742" height="237" key="GridCell.Tab.1.bottom" timestamp="1621784840478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="237" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621776342188" />
-    <state width="742" height="237" key="GridCell.Tab.1.center" timestamp="1621776342188">
+    <state width="742" height="237" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621784840478" />
+    <state width="742" height="237" key="GridCell.Tab.1.center" timestamp="1621784840478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="237" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1621776342188" />
-    <state width="742" height="237" key="GridCell.Tab.1.left" timestamp="1621776342188">
+    <state width="742" height="237" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1621784840478" />
+    <state width="742" height="237" key="GridCell.Tab.1.left" timestamp="1621784840478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="237" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1621776342188" />
-    <state width="742" height="237" key="GridCell.Tab.1.right" timestamp="1621776342188">
+    <state width="742" height="237" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1621784840478" />
+    <state width="742" height="237" key="GridCell.Tab.1.right" timestamp="1621784840478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="742" height="237" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1621776342188" />
+    <state width="742" height="237" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1621784840478" />
     <state x="540" y="95" key="SettingsEditor" timestamp="1615651317901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,11 +294,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$xpath.coverage" NAME="xpath模块练习 Coverage Results" MODIFIED="1615084748120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="空气质量分数爬取 Coverage Results" MODIFIED="1620316183314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫" />
-    <SUITE FILE_PATH="coverage/$Mpandas.coverage" NAME="Mpandas Coverage Results" MODIFIED="1621779826632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="级联 Coverage Results" MODIFIED="1621955282303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mpandas" />
+    <SUITE FILE_PATH="coverage/$Mpandas.coverage" NAME="Mpandas Coverage Results" MODIFIED="1621952673348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$2__.coverage" NAME="2. 多任务 Coverage Results" MODIFIED="1615645193586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/多任务线程" />
     <SUITE FILE_PATH="coverage/$_.coverage" NAME="单线程+多任务异步协程 Coverage Results" MODIFIED="1615651778001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/多任务线程" />
     <SUITE FILE_PATH="coverage/$Mnumpy.coverage" NAME="Mnumpy Coverage Results" MODIFIED="1621776475292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$1_.coverage" NAME="1.协程 Coverage Results" MODIFIED="1615645595116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/多任务线程" />
+    <SUITE FILE_PATH="coverage/$1_.coverage" NAME="1.绘制拆线图 Coverage Results" MODIFIED="1621948715392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mmatplotlib" />
   </component>
 </project>

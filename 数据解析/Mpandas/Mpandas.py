@@ -1,3 +1,9 @@
+"""
+** 1.数据丢失
+** 2.空值清洗
+** 3.数据提取
+"""
+
 import pandas as pd
 from pandas import Series, DataFrame
 import numpy as np
@@ -70,4 +76,25 @@ print(df.loc[['数学', '英语'], '张三'])
 print(df.iloc[:, 0:1])  # 获取第1列 张三列
 print(df.iloc[0:1])  # 获取语文行
 
+
+# 3. 数据丢失
+# 3.1 查看np.nan的数据类型
+print(type(np.nan))  # float
+
+# -- 应用: 数据清洗
+# isnull() notnull() dropna(): 过滤丢失数据 fillna(): 填充丢失数据
+# 3.11 pandas中None与np.nan都视作np.nan
+df = DataFrame(data=np.random.randint(0, 100, size=(8, 10)))  # 创建8行10列的二维数组
+df.iloc[2, 5] = None  # 构建空值
+df.iloc[5, 3] = np.nan
+df.iloc[7, 7] = None
+print(df.isnull().any(axis=1))  # 固定搭配 将空所对应的行删掉
+print(df.notnull().all(axis=1))  # 固定搭配 将空所对应的行删掉
+# 等同于
+print(df.dropna(axis=0))  # 数据丢失处理方式1： 0 表示行 1 表示列 删除空行
+print(df.fillna(method='ffill', axis=1))  # 数据丢失处理方式2: 向前覆盖 bfill 向后覆盖 第一行和最后一行有空值不好处理,用两次fillna
+
+
+# ** 数据提取
+pd.read_excel('./测试数据.xlsx')
 
