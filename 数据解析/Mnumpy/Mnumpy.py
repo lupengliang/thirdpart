@@ -1,5 +1,12 @@
 """
-numpy 库方法
+1. 一维/二维数组创建 array
+2. 图片截取
+3. 任意数组创建：np.random.randint
+*. axis
+4. 切片 列，行，颜色
+5. 索引
+6. 倒序
+7. 聚合？
 """
 # 1.一维数组创建
 import numpy as np
@@ -35,11 +42,11 @@ print(np.arange(1, 100, 2))  # 只能返回一维数组
 # 随机原是：随机因子：表示一个无时无刻都在变化的数值
 import numpy as np
 # 固定随机因子： np.random.seed(10)
-print(np.random.randint(1, 100, size=(4, 5)))  # 产生任意维度的数组 eg:4维5列
+print(np.random.randint(1, 100, size=(4, 5)))  # 产生任意维度的数组 eg:4行5列2维数组
 
 # 4.4. np.random.random(size=(5,3))
 import numpy as np
-print(np.random.random(size=(5, 3)))  # 返回 0~1 之间任意维度的数组 eg:5维3列
+print(np.random.random(size=(5, 3)))  # 返回 0~1 之间任意维度的数组 eg:5行3列2维
 
 
 # 5. ndarray的属性

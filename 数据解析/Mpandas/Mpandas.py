@@ -1,7 +1,19 @@
 """
-** 1.数据丢失
-** 2.空值清洗
-** 3.数据提取
+Series:
+    1. 一维数组创建： Series()
+    2. 显性索引：自定义  隐性索引：0 1 2
+    3. 索引取值：类似列表
+    4. 切片取值：类似列表
+    5. 一维数组去重: unique()
+    6. 多个Series相加：列索引与行索引一致
+    7. 取出两个值
+    8. 判断是否为空 isnull()
+    9. 省略空值，打印有值的 bool值作索引
+DataFrame
+    1. 创建方式
+** 1.数据丢失 人式构建
+** 2.空值清洗 dropna fillna
+** 3.数据提取 read_excel
 """
 
 import pandas as pd
@@ -96,5 +108,5 @@ print(df.fillna(method='ffill', axis=1))  # 数据丢失处理方式2: 向前覆
 
 
 # ** 数据提取
-pd.read_excel('./测试数据.xlsx')
+# pd.read_excel('./测试数据.xlsx')
 
