@@ -6,20 +6,30 @@ class Queue:
     def __init__(self):
         self.items = []
 
+    # 存入数据
     def enqueue(self, item):
         self.items.insert(0, item)
 
+    # 取出数据
     def dequeue(self):
         return self.items.pop()  # 从尾部取
 
+    # 队列的长度
     def peek(self):
         return len(self.items) - 1
 
+    # 判断队列是否为空
     def isEmpty(self):
         return self.items == []
 
+    # 队列的长度
     def size(self):
         return len(self.items)
+
+    # 遍历
+    def travel(self):
+        for item in self.items:
+            print(item)
 
 
 if __name__ == '__main__':
