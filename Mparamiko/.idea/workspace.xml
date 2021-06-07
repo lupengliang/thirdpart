@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="561a1772-e0d0-4a36-bb61-ec4d1331b8bf" name="Default Changelist" comment="" />
+    <list default="true" id="260b4a30-8523-449c-ab3c-9d958b217a60" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,22 +17,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1pIKLbWs6ZyEqkB7fsJRqlMKErX" />
+  <component name="ProjectId" id="1tWaDQScBveqLajep0SNP4UoxuW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="remote" />
+    <configuration name="base-remote" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mparamiko" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -44,7 +44,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base-remote.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.testing" />
+        <item itemvalue="Python.base-remote" />
       </list>
     </recent_temporary>
   </component>
@@ -64,14 +64,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="561a1772-e0d0-4a36-bb61-ec4d1331b8bf" name="Default Changelist" comment="" />
-      <created>1614865112144</created>
+      <changelist id="260b4a30-8523-449c-ab3c-9d958b217a60" name="Default Changelist" comment="" />
+      <created>1622887179830</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614865112144</updated>
-      <workItem from="1614865125366" duration="1939000" />
-      <workItem from="1615080823096" duration="227000" />
-      <workItem from="1619189319429" duration="54000" />
+      <updated>1622887179830</updated>
+      <workItem from="1622887184668" duration="372000" />
+      <workItem from="1622987372592" duration="2234000" />
     </task>
     <servers />
   </component>
@@ -79,28 +78,24 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="774" y="238" key="FileChooserDialogImpl" timestamp="1619189343867">
+    <state width="766" height="191" key="GridCell.Tab.0.bottom" timestamp="1622887558496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="774" y="238" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619189343867" />
-    <state width="766" height="191" key="GridCell.Tab.0.bottom" timestamp="1614869389584">
+    <state width="766" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622887558496" />
+    <state width="766" height="191" key="GridCell.Tab.0.center" timestamp="1622887558496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="766" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614869389584" />
-    <state width="766" height="191" key="GridCell.Tab.0.center" timestamp="1614869389584">
+    <state width="766" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622887558496" />
+    <state width="766" height="191" key="GridCell.Tab.0.left" timestamp="1622887558496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="766" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614869389584" />
-    <state width="766" height="191" key="GridCell.Tab.0.left" timestamp="1614869389584">
+    <state width="766" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622887558496" />
+    <state width="766" height="191" key="GridCell.Tab.0.right" timestamp="1622887558496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="766" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614869389584" />
-    <state width="766" height="191" key="GridCell.Tab.0.right" timestamp="1614869389584">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="766" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614869389584" />
+    <state width="766" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622887558496" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/remote$testing.coverage" NAME="testing Coverage Results" MODIFIED="1614869333627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mparamiko$base_remote.coverage" NAME="base-remote Coverage Results" MODIFIED="1622887244034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

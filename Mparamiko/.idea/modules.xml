@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/remote.iml" filepath="$PROJECT_DIR$/.idea/remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mparamiko.iml" filepath="$PROJECT_DIR$/.idea/Mparamiko.iml" />
     </modules>
   </component>
 </project>
