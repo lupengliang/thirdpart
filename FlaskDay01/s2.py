@@ -1,10 +1,12 @@
+# 1.Flask中的request
+# 2.Flask中的session
 import os
 
 from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
-app.secret_key = "(&&($$@$@^(@$@$^(@$*#($@#*&$*^@$^$(@)"
-app.debug = True
+app.secret_key = "(&&($$@$@^(@$@$^(@$*#($@#*&$*^@$^$(@)"  # 为session添加秘钥
+app.debug = True  # 开启Flask日志模式
 
 
 @app.route("/login", methods=["GET", "POST"])  # 405 请求方式不被允许

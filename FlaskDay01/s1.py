@@ -22,11 +22,11 @@ def home():
 
 @app.route("/re")
 def re():
-    return redirect("/home")
+    return redirect("/home")  # redirect
 
 @app.route("/get_file")
 def get_file():
-    return send_file("s1.py")
+    return send_file("s1.py")  # 保存文件到当前目录
 
 
 if __name__ == '__main__':
