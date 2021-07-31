@@ -36,7 +36,7 @@
       <recent name="D:\TOOLS\算法\3_队列" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.两个队列实现一个栈">
+  <component name="RunManager" selected="Python.链表倒置">
     <configuration name="两个队列实现一个栈" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="算法" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,10 +235,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="链表倒置" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="算法" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/链表倒置.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.链表倒置" />
         <item itemvalue="Python.两个队列实现一个栈" />
-        <item itemvalue="Python.1单链表" />
         <item itemvalue="Python.3队列" />
         <item itemvalue="Python.2栈" />
         <item itemvalue="Python.1计算平均耗时" />
@@ -262,6 +284,7 @@
       <workItem from="1622860259591" duration="1137000" />
       <workItem from="1622885698223" duration="413000" />
       <workItem from="1623072985549" duration="3966000" />
+      <workItem from="1623246053072" duration="3133000" />
     </task>
     <servers />
   </component>
@@ -269,30 +292,30 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="968" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623075940391">
+    <state x="968" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623248909472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="968" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1623075940391" />
-    <state width="620" height="191" key="GridCell.Tab.0.bottom" timestamp="1623077464909">
+    <state x="968" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1623248909472" />
+    <state width="621" height="191" key="GridCell.Tab.0.bottom" timestamp="1623249517340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="620" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623077464909" />
-    <state width="620" height="191" key="GridCell.Tab.0.center" timestamp="1623077464909">
+    <state width="621" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623249517340" />
+    <state width="621" height="191" key="GridCell.Tab.0.center" timestamp="1623249517340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="620" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623077464909" />
-    <state width="620" height="191" key="GridCell.Tab.0.left" timestamp="1623077464909">
+    <state width="621" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623249517340" />
+    <state width="621" height="191" key="GridCell.Tab.0.left" timestamp="1623249517340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="620" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623077464909" />
-    <state width="620" height="191" key="GridCell.Tab.0.right" timestamp="1623077464909">
+    <state width="621" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623249517340" />
+    <state width="621" height="191" key="GridCell.Tab.0.right" timestamp="1623249517340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="620" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623077464909" />
+    <state width="621" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623249517340" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$2.coverage" NAME="2双端队列 Coverage Results" MODIFIED="1622472364308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3队列" />
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="两个队列实现一个栈 Coverage Results" MODIFIED="1623077389899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="链表倒置 Coverage Results" MODIFIED="1623247444064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3队列 Coverage Results" MODIFIED="1622383773733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1算法初识" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1单链表 Coverage Results" MODIFIED="1623074812814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/5链表" />
   </component>

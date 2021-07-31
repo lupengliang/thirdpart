@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>学生信息</title>
+</head>
+<body>
+{{ stu_info }}
+<table border="1px">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>gender</td>
+    </tr>
+    <tr>
+        <td>{{ stu_info.name }}</td>
+        <td>{{ stu_info.get("age") }}</td>
+        <td>{{ stu_info["gender"] }}</td>
+    </tr>
+
+
+</table>
+
+{{ stu_list }}
+
+<table border="1px">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>gender</td>
+    </tr>
+    {% for stu in stu_list %}
+     <tr>
+        <td>{{ stu.name }}</td>
+        <td>{{ stu.get("age") }}</td>
+        <td>
+            {% if stu["gender"] != "男" and stu["gender"] != "女" %}
+            李杰
+            {% else %}
+                {{ stu["gender"] }}
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<table border="1px">
+    {{ stu_dict }}
+    {% for foo in stu_dict %}}
+        {{ stu_dict[foo].get("name") }}
+        {{ stu_dict[foo]["age"] }}
+        {{ stu_dict[foo].gender }}
+    {% endfor %}
+</table>
+
+<p>{{ ab(1,2) }}</p>
+
+{% macro my_input(ty,na) %}
+    <input type="{{ty}}" name="{{ na }}">
+{% endmacro %}
+
+<p>这就是我自己创造的标签: {{ my_input("text", "username") }}</p>
+
+</body>
+</html>
