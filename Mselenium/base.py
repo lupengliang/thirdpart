@@ -172,10 +172,17 @@ class WebOperation:
         return ele
 
     # 属性: 去除元素的只读属性
-    def remove_readonly_from_element_and_send_keys(self, browser, ele_tuple, value):
+    def remove_readonly_from_element_and_send_keys(self, browser, ele_tuple, attributeName, value):
+        """
         ele = self.remove_attribute(browser, ele_tuple, "readonly")
         ele.clear()
         ele.send_keys(value)
+        """
+        ele = self.remove_attribute(browser, ele_tuple, "readonly")
+        # 封装设置页面对象的属性值的方法
+        # 调用JavaScript代码修改页面元素的属性值进行替换，并执行该JavaScript代码
+        browser.execute_script("arguments[0].setAttribute(arguments[1], arguments[2])", self.get_element(browser, ele_tuple), attributeName, value)
+        return ele
 
     # 图片: 截图保存图片
     @staticmethod
